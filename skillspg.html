@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+            background-image: url(images/ada.jfif);
+            background-size: cover;
+        }
+        .section-title h1{
+            color: rgb(53, 54, 56);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        h6{
+            color: rgb(2, 2, 2);
+            font-size: 16px;
+        }
+        .skills{
+            margin-top: 80px;
+            margin-left: 50px;
+            position: relative;
+            top: 100px;
+        }
+        h2{
+            line-height: 40px;
+            color: rgb(75, 72, 72);
+            font-size: 25px;
+            line-height: 2rem;
+            margin-bottom: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        ::placeholder{
+            color: rgb(175, 175, 175);
+            font-size: 20px;
+            position: relative;
+            right: 17px;
+            top: 2px;
+        }
+        h5{
+            line-height: 40px;
+            color: rgb(255, 255, 255);
+            font-size: 17px;
+            font-family: cursive;
+            letter-spacing: 1px;
+        }
+        .progress{
+            background: #ffffff;
+            height: 10px;
+            border-radius: 2px;
+            width: 95%;
+            position: relative;
+            border-style: ridge;
+            border-width: 10px;
+        }
+        .progress-in{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            border-radius: 1px;
+            background: rgb(88, 236, 133);
+        }
+        .skill-percent{
+            line-height: 40px;
+            position: absolute;
+            right: 0;
+            color: rgb(255, 251, 251);
+            top: -40px;
+            font-weight: 400;
+        }
+        .headerbox{
+            width: 1367px;
+            background-image: linear-gradient(to right, rgb(248, 245, 245), rgb(12, 12, 12));
+            height: 90px;
+            position: relative;
+            top: 2px;
+            border-width: 1px;
+            border-style: ridge;
+
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            display: flex;
+            position: relative;
+        }
+        ul li{
+            float: right;
+            padding: 20px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            position: relative;
+            right: 60px;
+            top: 10px;
+        }
+        a{
+            color: #d7d2cc;
+            text-decoration: none;
+            border-radius: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+        li :hover{
+            color: rgb(102, 96, 96);
+            background-color: white;
+            border-style: 10px;
+            border-style:ridge;
+            transition: 0.4s;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section{
+            position: relative;
+            bottom: 100px;
+        }
+        @media (max-width: 600px){
+    .headerbox{
+        height: 320px;
+    }
+    ul li{
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,05);
+        border-top: 1px solid rgba(225,0225,225,05);
+        list-style: none;
+        position: relative;
+        left: 15px;
+        top: -3px;
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 500px){
+    .progress{
+        right: 23px;
+    }
+}
+@media (max-width:321px){
+    .progress{
+        right: 30px;
+    }
+}
+@media (max-width:349px){
+    .progress{
+        right: 25px;
+    }
+}
+
+    
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerbox">
+            <div class="contents">
+                <ul>
+                    <li><a href="workspg.html">Works</a></li>
+                    <li><a href="skillspg.html">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contactspg.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <div class="container">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="section-title">
+        </div>
+        <div class="skills">
+            <div class="skill-item">
+                <h5>Web Development</h5>          
+                <div class="progress">
+                    <div class="progress-in" style="width: 46%;"></div>
+                    <div class="skill-percent">46%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h5>Basketball</h5>
+                <div class="progress">
+                    <div class="progress-in" style="width: 56%;"></div>
+                    <div class="skill-percent">56%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h5>Volleyball</h5>
+                <div class="progress">
+                    <div class="progress-in" style="width: 38%;"></div>
+                    <div class="skill-percent">38%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h5>Programming</h5>
+                <div class="progress">
+                    <div class="progress-in" style="width: 48%;"></div>
+                    <div class="skill-percent">48%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h5>Eating</h5>
+                <div class="progress">
+                    <div class="progress-in" style="width: 95%;"></div>
+                    <div class="skill-percent">95%</div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <h5>Reading</h5>
+                <div class="progress">
+                    <div class="progress-in" style="width:88%;"></div>
+                    <div class="skill-percent">88%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

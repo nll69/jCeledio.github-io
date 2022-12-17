@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+        }
+        .headerbox{
+            width: 1367px;
+            background-image: linear-gradient(to right, rgb(248, 245, 245), rgb(12, 12, 12));
+            height: 90px;
+            position: relative;
+            top: 2px;
+            border-width: 1px;
+            border-style: ridge;
+            border-width: 1px;
+        }
+        ul li{
+            float: right;
+            padding: 20px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            position: relative;
+            right: 60px;
+            top: 10px;
+        }
+        a{
+            color: #d7d2cc;
+            text-decoration: none;
+            border-radius: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+        li :hover{
+            color: rgb(102, 96, 96);
+            background-color: white;
+            border-style: 10px;
+            border-style:ridge;
+            transition: 0.4s;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            display: flex;
+            position: relative;
+        }
+        ::placeholder{
+            color: white;
+            font-size: 20px;
+            position: relative;
+            left: -15px;
+            top: 2px;
+        }
+        @media (max-width: 600px){
+    .headerbox{
+        height: 320px;
+    }
+    ul li{
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,05);
+        border-top: 1px solid rgba(225,0225,225,05);
+        list-style: none;
+        position: relative;
+        left: 1px;
+        top: 1px;
+        width: 100%;
+        text-align: center;
+
+    }
+}
+.about-wrapper{
+    height: 100vh;
+}
+.about-left{
+    background-color: #fcfcfc7a;
+    background-image: url(images/ada.jfif);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.about-left-content > div{
+    background: #f0eced;
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+}
+.about-left-content{
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+}
+.about-img img{
+    display: block;
+    width: 200px;
+}
+.about-img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.shadow::after{
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    height: 7px;
+    width: 50px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.shadow:hover .about-img{
+    transform: translateY(-10px);
+}
+.shadow:hover::after{
+    opacity: 1;
+}
+.about-left-content h2{
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #edffec;
+}
+.about-left-content h3{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+.icons{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+}
+.icons li{
+    list-style-type: none;
+    background: #ec023c;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover{
+    background: #edffec;
+    color: #000;
+}
+.about-right{
+    background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+}
+.about-right h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.about-right h1 span{
+    color: #5c5959;
+}
+.about-right h2{
+    font-weight: 600;
+}
+.about-btns{
+    display: flex;
+    margin: 2rem 0;
+}
+.btn{
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+.btn.btn-pink{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    border-color: #b9b6b6;
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-pink:hover{
+    background: transparent;
+    border-color: #ffffff;
+    color: #000;
+}
+.btn.btn-white{
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-white:hover{
+    background: #080808;
+    border-color: #ffffff;
+    color: #fff;
+}
+.about-para p{
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+@media screen and (min-width: 992px){
+    .about-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about-left{
+        position: relative;
+    }
+    .about-left-content{
+        position: absolute;
+        right: -50px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerbox">
+            <div class="contents">
+                <ul>
+                    <li><a href="workspg.html">Works</a></li>
+                    <li><a href="skillspg.html">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contactspg.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <div class="container">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        
+    </section><div class = "about-wrapper">
+        <div class = "about-left">
+          <div class = "about-left-content">
+            <div>
+              <div class = "shadow">
+                <div class = "about-img">
+                  <img src = "images/JJPP-removebg-preview (1).png" alt = "about image">
+                </div>
+              </div>
+  
+              <h2>More<br>About</h2>
+              <h3>BSIT Student</h3>
+            </div>
+  
+            <!-- <ul class = "icons">
+              <li><i class = "fab fa-facebook-f"></i></li>
+              <li><i class = "fab fa-twitter"></i></li>
+              <li><i class = "fab fa-linkedin"></i></li>
+              <li><i class = "fab fa-instagram"></i></li>
+            </ul> -->
+          </div>
+        </div>
+  
+        <div class = "about-right">
+          <h1 class="fonttest" style="font-size: 30px;">Johannes June B. Celedio<span style="color: #000;" ></span></h1>
+          <h2 style="font-family: cursive; font-style: italic;">more about me!</h2>
+          <div class = "about-btns">
+            <button class="btn btn-white" onclick="window.print()">Print Page</button>
+            <a href="workspg.html"><button type = "button" class = "btn btn-white">Works</button></a>
+          </div>
+  
+          <div class = "about-para">
+            <p>As a student, you are likely someone who is dedicated to learning and acquiring new knowledge.</p>
+            <p>As a student, you are likely curious and eager to learn, and you may be interested in a variety of subjects and topics. You may also be involved in extracurricular activities or clubs that allow you to explore your interests and develop new skills.</p>
+          </div>
+        </div>
+      </div>
+  
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/cd54ec63b9.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0;
+            background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);   
+            background-image: url(images/ada.jfif);
+            background-size: cover;   
+        }
+        .header{
+            width: 1348px;
+            background-image: linear-gradient(to right, rgb(248, 245, 245), rgb(12, 12, 12));
+            height: 90px;
+            position: relative;
+            top: 2px;
+            border-width: 1px;
+            border-style: ridge;
+        }
+        .container{
+            display: flex;
+            position: relative;
+        }
+        ul li{
+            float: right;
+            padding: 20px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            position: relative;
+            right: 60px;
+            top: 10px;
+        }
+        a{
+            color: #d7d2cc;
+            text-decoration: none;
+            border-radius: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+        li :hover{
+            color: rgb(102, 96, 96);
+            background-color: white;
+            border-style: 10px;
+            border-style:ridge;
+            transition: 0.4s;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .sbox{
+            position: relative;
+            left: 20px;
+            top: 22px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: #304352b2;
+            opacity: 0.7;
+        }
+        ::placeholder{
+            color: white;
+            font-size: 20px;
+            position: relative;
+            right: 17px;
+            top: 2px;
+        }
+        .contact{
+            position: relative;
+            min-height: 80vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .contact .content{
+            max-width: 800px;
+            text-align: center;
+        }
+        .contact .content h2{
+            font-size: 25px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .contact .content p{
+            font-size: 25px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .box1{
+            position: relative;
+            right: 380px;
+            top: 246px;
+        }
+        .box3{
+            position: relative;
+            top: 66px;
+        }
+        .box2{
+            position: relative;
+            left: 420px;
+            top: 160px;
+        }
+        .text h3{
+            font-size: 30px;
+        }
+        p{
+            color: rgb(8, 8, 8);
+        }
+        .adress{
+            width: 100px;
+            position: relative;
+            bottom: 200px;
+            left: 160px;
+        }
+        .phone{
+            width: 100px;
+            position: relative;
+            bottom: 290px;
+            right: 180px;
+            }
+        .email{
+            width: 120px;
+            position: relative;
+            bottom: 402px;
+        }
+        .text3{
+            position: relative;
+            bottom: 210px;
+        }
+        .text2{
+            position: relative;
+            bottom: 92px;
+            right: 180px;
+        }
+        .text1{
+            left: 147px;
+            position: relative;
+        }
+        .align{
+            position: relative;
+            bottom: 170px;
+        }
+        p{
+            font-weight: 100;
+        }
+        .text1 h3{
+            margin-bottom: 7px;
+        }
+        .text2 h3{
+            margin-bottom: 7px;
+        }
+        .text3 h3{
+            margin-bottom: 7px;
+        }
+        .headerbox{
+            background-image: linear-gradient(to right, rgb(248, 245, 245), rgb(12, 12, 12));
+            width: 1347px;
+            height: 90px;
+            border-style: ridge;
+            border-width: 1px; 
+        }
+        .container{
+            display: flex;
+            position: relative;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+        }
+        ::placeholder{
+            color: white;
+
+        }
+        .sbox{
+            position: relative;
+            bottom: 400px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: #304352b2;
+            opacity: 0.7;
+        }
+        .headerbox{
+            width: 1367px;
+            background-image: linear-gradient(to right, rgb(248, 245, 245), rgb(12, 12, 12));
+            height: 90px;
+            position: relative;
+            top: 2px;
+            border-width: 1px;
+            border-style: ridge;
+            border-width: 1px;
+        }
+        .container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    position: relative;
+    top: 20px;
+}
+
+.left{
+    background-image: url(images/cool\ color.webp); background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+::placeholder{
+    color: black;
+}
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+
+	.left{
+		height: 100px;
+	}
+    .right{
+        width: 400px;
+	}
+
+}
+@media (max-width: 600px){
+    .headerbox{
+        height: 320px;
+    }
+    ul li{
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,05);
+        border-top: 1px solid rgba(225,0225,225,05);
+        list-style: none;
+        position: relative;
+        left: 1px;
+        top: 1px;
+        text-align:center;
+        width: 100%;
+    }
+}
+@media (max-width: 417px){
+    .right{
+        width: 220px;
+    }
+}
+@media (max-width:334px){
+    .right{
+        width: 280px;
+    }
+}
+@media (max-width:337px){
+    .right{
+        width: 280px;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerbox">
+            <div class="contents">
+                <ul>
+                    <li><a href="workspg.html">Works</a></li>
+                    <li><a href="skillspg.html">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contactspg.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="contact-box">
+                <div class="left"></div>
+                <div class="right">
+                    <h2>Contact Me!</h2>
+                    <input type="text" class="field" placeholder="Your Name">
+                    <input type="text" class="field" placeholder="Your Email">
+                    <input type="text" class="field" placeholder="Phone">
+                    <textarea placeholder="Message" class="field"></textarea>
+                    <button class="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

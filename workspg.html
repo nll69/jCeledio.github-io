@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+            background-image: url(images/ada.jfif);
+        }
+        .headerbox{
+            width: 1367px;
+            background-image: linear-gradient(to right, rgb(248, 245, 245), rgb(12, 12, 12));
+            height: 90px;
+            position: relative;
+            top: 2px;
+            border-width: 1px;
+            border-style: ridge;
+            border-width: 1px;
+        }
+        ul li{
+            float: right;
+            padding: 20px;
+            margin-bottom: 10px;
+            list-style-type: none;
+            position: relative;
+            right: 60px;
+            top: 10px;
+        }
+        a{
+            color: #d7d2cc;
+            text-decoration: none;
+            border-radius: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: larger;
+        }
+        li :hover{
+            color: rgb(102, 96, 96);
+            background-color: white;
+            border-style: 10px;
+            border-style:ridge;
+            transition: 0.4s;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+        }
+        .container{
+            display: flex;
+            position: relative;
+        }
+        ::placeholder{
+            color: white;
+            font-size: 20px;
+            position: relative;
+            left: -15px;
+            top: 2px;
+        }
+
+        @media (max-width: 600px){
+    .headerbox{
+        height: 320px;
+    }
+    ul li{
+        padding: 15px;
+        border-bottom: 1px solid rgba(0,0,0,05);
+        border-top: 1px solid rgba(225,0225,225,05);
+        list-style: none;
+        position: relative;
+        left: 4px;
+        top: 1px;
+        text-align: center;
+        width: 100%;
+    }
+}
+.cont{
+    width: 100%;
+    min-height: 100vh;
+    /* background: linear-gradient(to right, #d7d2cc 0%, #304352 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 90px;
+}
+.content-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-section .card{
+    flex: 1;
+    margin: 20px 20px;
+    box-shadow: 0px 2px 8px 0px rgba(14, 13, 13, 0.2);
+    border-radius:60px;
+    position: relative;
+    bottom: 100px;
+    background-color: aliceblue;   
+}
+.content-section .card:hover{
+    background-color: rgba(233, 233, 236, 0.658)
+}
+.content-section .card:hover{
+    transition: 0.6s;
+}
+.content-section .card img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border-style: ridge;
+}
+.content-section .card h1{
+    margin: 15px 0px;
+    font-size: 28px;
+    color: rgb(22, 22, 22);
+}
+.content-section .card p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+}
+@media screen and (max-width: 768px){
+    .content-section{
+        flex-direction: column;
+    }
+    .content-section .card{
+        top: 30px;
+    }
+    .texts p{
+        bottom: 20px;
+    }
+}
+.texts{
+    text-align: center;
+    position: relative;
+    top: 20px;
+    
+}
+.texts p{
+    font-size: 80px;
+    text-transform: capitalize;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerbox">
+            <div class="contents">
+                <ul>
+                    <li><a href="workspg.html">Works</a></li>
+                    <li><a href="skillspg.html">Skills</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="contactspg.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="texts">
+        <p>My Works!</p>
+    </div>
+
+    <section>
+        <div class="cont">
+            <div class="content-section">
+                <div class="card">
+                    <img src="images/UUUUU.PNG" alt="">
+                    <h1>Ubunutu Project</h1>
+                    <!-- <p>happy birthday to you, happy birthday to you</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/assemble.PNG" alt="">
+                    <h1>Assemble Dissasemble</h1>
+                    <!-- <p>happy birthday to you, happy birthday to you</p> -->
+                </div>
+                <div class="card">
+                    <img src="images/DB.PNG" alt="">
+                    <h1>Python Project</h1>
+                    <!-- <p>happy birthday to you, happy birthday to you</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
